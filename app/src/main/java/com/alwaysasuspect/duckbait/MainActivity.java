@@ -1,4 +1,4 @@
-package com.alwaysasuspect.duckbait
+package com.alwaysasuspect.duckbait;
 
 import android.app.Activity;
 import android.content.Intent;
