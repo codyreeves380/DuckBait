@@ -1,0 +1,8 @@
+<!-- Add/update these attributes inside the <application> tag of AndroidManifest.xml -->
+<application
+    android:icon="@mipmap/ic_launcher"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:label="DuckBait"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.DuckBait">
+</application>
