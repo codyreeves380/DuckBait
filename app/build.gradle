@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.yourname.docgen'
+    namespace 'com.alwaysasuspect.duckbait'
     compileSdk 37
 
     defaultConfig {
-        applicationId 'com.yourname.docgen'
+        applicationId 'com.alwaysasuspect.duckbait'
         minSdk 26
         targetSdk 37
         versionCode 1
