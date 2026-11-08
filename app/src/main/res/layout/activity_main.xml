@@ -307,7 +307,7 @@
             android:hint="Date"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
+            android:inputType="textCapSentences" />
         <CheckBox
             android:id="@+id/save_date"
             android:layout_width="wrap_content"
