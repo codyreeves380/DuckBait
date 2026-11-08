@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Document details"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText android:id="@+id/input_defendant" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Defendant" android:inputType="textPersonName" />
+        <CheckBox android:id="@+id/save_defendant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Defendant" />
+
+        <EditText android:id="@+id/input_causeno" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Cause No." android:inputType="text" />
+        <CheckBox android:id="@+id/save_causeno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Cause No." />
+
+        <EditText android:id="@+id/input_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Date" android:inputType="text" />
+        <CheckBox android:id="@+id/save_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Date" />
+
+        <EditText android:id="@+id/input_defid" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Defendant ID" android:inputType="text" />
+        <CheckBox android:id="@+id/save_defid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Defendant ID" />
+
+        <EditText android:id="@+id/input_deposit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Deposit" android:inputType="numberDecimal" />
+        <CheckBox android:id="@+id/save_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Deposit" />
+
+        <EditText android:id="@+id/input_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Day" android:inputType="number" />
+        <CheckBox android:id="@+id/save_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Day" />
+
+        <EditText android:id="@+id/input_month" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Month" android:inputType="text" />
+        <CheckBox android:id="@+id/save_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Month" />
+
+        <EditText android:id="@+id/input_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Year" android:inputType="number" />
+        <CheckBox android:id="@+id/save_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Year" />
+
+        <EditText android:id="@+id/input_compliance_officer" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Compliance Officer" android:inputType="textPersonName" />
+        <CheckBox android:id="@+id/save_compliance_officer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Compliance Officer" />
+
+        <EditText android:id="@+id/input_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Phone" android:inputType="phone" />
+        <CheckBox android:id="@+id/save_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Phone" />
+
+        <EditText android:id="@+id/input_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Email" android:inputType="textEmailAddress" />
+        <CheckBox android:id="@+id/save_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Email" />
+
+        <EditText android:id="@+id/input_badge" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Badge" android:inputType="text" />
+        <CheckBox android:id="@+id/save_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Badge" />
+
+        <EditText android:id="@+id/input_gps" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="GPS" android:inputType="text" />
+        <CheckBox android:id="@+id/save_gps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save GPS" />
+
+        <EditText android:id="@+id/input_program" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Program" android:inputType="text" />
+        <CheckBox android:id="@+id/save_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Program" />
+
+        <EditText android:id="@+id/input_tax" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tax" android:inputType="text" />
+        <CheckBox android:id="@+id/save_tax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Tax" />
+
+        <EditText android:id="@+id/input_judge" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Judge" android:inputType="textPersonName" />
+        <CheckBox android:id="@+id/save_judge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Judge" />
+
+        <Button
+            android:id="@+id/btn_select_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select DOCX Template" />
+
+        <TextView
+            android:id="@+id/txt_selected_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="No template selected" />
+
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Document" />
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Status: Select a template to begin." />
+    </LinearLayout>
+</ScrollView>
