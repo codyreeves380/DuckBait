@@ -32,7 +32,7 @@ final class DocxTemplateProcessor {
             "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
     private static final String XML_NS = "http://www.w3.org/XML/1998/namespace";
     private static final String DOCUMENT_XML = "word/document.xml";
-    private static final String WORD_HEADER_FOOTER_PATTERN = "word/(header|footer)[0-9]*\\\\.xml";
+    private static final String WORD_HEADER_FOOTER_PATTERN = "word/(header|footer)[0-9]*\\.xml";
 
     private DocxTemplateProcessor() {
     }
