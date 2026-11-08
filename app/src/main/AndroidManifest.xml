@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-
-
-android:icon="@mipmap/ic_launcher"
-android:roundIcon="@mipmap/ic_launcher"
-
-
+        android:icon="@drawable/ic_launcher_512"
+        android:roundIcon="@drawable/ic_launcher_512"
         android:allowBackup="true"
-        android:label="Docgen"
+        android:label="DuckBait"
         android:supportsRtl="true">
         <activity
             android:name=".MainActivity"
