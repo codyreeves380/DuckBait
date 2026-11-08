@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#000000</color>
     <color name="duckbait_background">#111111</color>
-    <color name="duckbait_surface">#1C1C1C</color>
+    <color name="duckbait_surface">#1F1F1F</color>
     <color name="duckbait_primary">#F2C14E</color>
+    <color name="duckbait_primary_dark">#D9A83E</color>
     <color name="duckbait_text">#F5F5F5</color>
+    <color name="duckbait_hint">#BDBDBD</color>
+    <color name="duckbait_border">#444444</color>
 </resources>
