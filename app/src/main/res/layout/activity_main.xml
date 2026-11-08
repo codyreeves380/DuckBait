@@ -20,6 +20,16 @@
             android:textSize="28sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Case Info"
+            android:textColor="@color/duckbait_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/input_defendant"
             android:layout_width="match_parent"
@@ -55,23 +65,6 @@
             android:textColor="@color/duckbait_text" />
 
         <EditText
-            android:id="@+id/input_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/duckbait_primary"
-            android:hint="Date"
-            android:textColor="@color/duckbait_text"
-            android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
-        <CheckBox
-            android:id="@+id/save_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Date"
-            android:textColor="@color/duckbait_text" />
-
-        <EditText
             android:id="@+id/input_defid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,72 +82,32 @@
             android:textColor="@color/duckbait_text" />
 
         <EditText
-            android:id="@+id/input_deposit"
+            android:id="@+id/input_judge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/duckbait_primary"
-            android:hint="Deposit"
+            android:hint="Judge"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="textPersonName" />
         <CheckBox
-            android:id="@+id/save_deposit"
+            android:id="@+id/save_judge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save Deposit"
+            android:text="Save Judge"
             android:textColor="@color/duckbait_text" />
 
-        <EditText
-            android:id="@+id/input_day"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/duckbait_primary"
-            android:hint="Day"
-            android:textColor="@color/duckbait_text"
-            android:textColorHint="@color/duckbait_hint"
-            android:inputType="number" />
-        <CheckBox
-            android:id="@+id/save_day"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Day"
-            android:textColor="@color/duckbait_text" />
 
-        <EditText
-            android:id="@+id/input_month"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/duckbait_primary"
-            android:hint="Month"
-            android:textColor="@color/duckbait_text"
-            android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
-        <CheckBox
-            android:id="@+id/save_month"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Month"
-            android:textColor="@color/duckbait_text" />
-
-        <EditText
-            android:id="@+id/input_year"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/duckbait_primary"
-            android:hint="Year"
-            android:textColor="@color/duckbait_text"
-            android:textColorHint="@color/duckbait_hint"
-            android:inputType="number" />
-        <CheckBox
-            android:id="@+id/save_year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Year"
-            android:textColor="@color/duckbait_text" />
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Your Info"
+            android:textColor="@color/duckbait_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/input_compliance_officer"
@@ -174,20 +127,20 @@
             android:textColor="@color/duckbait_text" />
 
         <EditText
-            android:id="@+id/input_phone"
+            android:id="@+id/input_badge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/duckbait_primary"
-            android:hint="Phone"
+            android:hint="Badge"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="phone" />
+            android:inputType="text" />
         <CheckBox
-            android:id="@+id/save_phone"
+            android:id="@+id/save_badge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save Phone"
+            android:text="Save Badge"
             android:textColor="@color/duckbait_text" />
 
         <EditText
@@ -208,21 +161,32 @@
             android:textColor="@color/duckbait_text" />
 
         <EditText
-            android:id="@+id/input_badge"
+            android:id="@+id/input_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/duckbait_primary"
-            android:hint="Badge"
+            android:hint="Phone"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
+            android:inputType="phone" />
         <CheckBox
-            android:id="@+id/save_badge"
+            android:id="@+id/save_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save Badge"
+            android:text="Save Phone"
             android:textColor="@color/duckbait_text" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Pay Amounts"
+            android:textColor="@color/duckbait_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/input_gps"
@@ -276,21 +240,101 @@
             android:textColor="@color/duckbait_text" />
 
         <EditText
-            android:id="@+id/input_judge"
+            android:id="@+id/input_deposit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/duckbait_primary"
-            android:hint="Judge"
+            android:hint="Deposit"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="textPersonName" />
+            android:inputType="numberDecimal" />
         <CheckBox
-            android:id="@+id/save_judge"
+            android:id="@+id/save_deposit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save Judge"
+            android:text="Save Deposit"
             android:textColor="@color/duckbait_text" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Dates"
+            android:textColor="@color/duckbait_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/duckbait_primary"
+            android:hint="Date"
+            android:textColor="@color/duckbait_text"
+            android:textColorHint="@color/duckbait_hint"
+            android:inputType="text" />
+        <CheckBox
+            android:id="@+id/save_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Date"
+            android:textColor="@color/duckbait_text" />
+
+        <EditText
+            android:id="@+id/input_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/duckbait_primary"
+            android:hint="Day"
+            android:textColor="@color/duckbait_text"
+            android:textColorHint="@color/duckbait_hint"
+            android:inputType="number" />
+        <CheckBox
+            android:id="@+id/save_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Day"
+            android:textColor="@color/duckbait_text" />
+
+        <EditText
+            android:id="@+id/input_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/duckbait_primary"
+            android:hint="Month"
+            android:textColor="@color/duckbait_text"
+            android:textColorHint="@color/duckbait_hint"
+            android:inputType="text" />
+        <CheckBox
+            android:id="@+id/save_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Month"
+            android:textColor="@color/duckbait_text" />
+
+        <EditText
+            android:id="@+id/input_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/duckbait_primary"
+            android:hint="Year"
+            android:textColor="@color/duckbait_text"
+            android:textColorHint="@color/duckbait_hint"
+            android:inputType="number" />
+        <CheckBox
+            android:id="@+id/save_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Year"
+            android:textColor="@color/duckbait_text" />
+
 
         <Button
             android:id="@+id/btn_select_file"
