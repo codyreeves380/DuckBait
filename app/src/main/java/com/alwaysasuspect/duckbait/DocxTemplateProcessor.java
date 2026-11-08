@@ -26,12 +26,13 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-/** Replaces placeholders in a DOCX's main document using Android's built-in ZIP/XML APIs. */
+/** Replaces placeholders in a DOCX's body, headers, and footers using Android's built-in ZIP/XML APIs. */
 final class DocxTemplateProcessor {
     private static final String WORD_NS =
             "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
     private static final String XML_NS = "http://www.w3.org/XML/1998/namespace";
     private static final String DOCUMENT_XML = "word/document.xml";
+    private static final String WORD_HEADER_FOOTER_PATTERN = "word/(header|footer)[0-9]*\\\\.xml";
 
     private DocxTemplateProcessor() {
     }
@@ -50,14 +51,17 @@ final class DocxTemplateProcessor {
                 }
                 zipOutput.putNextEntry(outputEntry);
 
-                if (DOCUMENT_XML.equals(entry.getName())) {
-                    foundDocument = true;
+                if (DOCUMENT_XML.equals(entry.getName())
+                        || entry.getName().matches(WORD_HEADER_FOOTER_PATTERN)) {
+                    if (DOCUMENT_XML.equals(entry.getName())) {
+                        foundDocument = true;
+                    }
                     ByteArrayOutputStream xml = new ByteArrayOutputStream();
                     int count;
                     while ((count = zipInput.read(buffer)) != -1) {
                         xml.write(buffer, 0, count);
                     }
-                    zipOutput.write(replaceDocument(xml.toByteArray(), replacements));
+                    zipOutput.write(replaceWordXml(xml.toByteArray(), replacements));
                 } else {
                     int count;
                     while ((count = zipInput.read(buffer)) != -1) {
@@ -74,7 +78,7 @@ final class DocxTemplateProcessor {
         }
     }
 
-    private static byte[] replaceDocument(byte[] xmlBytes,
+    private static byte[] replaceWordXml(byte[] xmlBytes,
                                           Map<String, String> replacements) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
