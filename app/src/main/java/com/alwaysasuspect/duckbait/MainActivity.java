@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.io.InputStream;
@@ -196,6 +198,10 @@ public class MainActivity extends Activity {
         replacements.put("[[PRO]]", inputProgram.getText().toString().trim());
         replacements.put("[[TAX]]", inputTax.getText().toString().trim());
         replacements.put("[[JUDGE]]", inputJudge.getText().toString().trim());
+        RadioGroup requirementGroup = findViewById(R.id.group_requirement);
+        RadioButton selectedRequirement = findViewById(requirementGroup.getCheckedRadioButtonId());
+        replacements.put("[[REQU]]", selectedRequirement == null
+                ? "Not Required" : selectedRequirement.getText().toString());
 
         if (replacements.get("[[DEFENDANT]]").isEmpty()
                 || replacements.get("[[CAUSENO]]").isEmpty()) {
