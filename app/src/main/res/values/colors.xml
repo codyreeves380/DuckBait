@@ -7,4 +7,5 @@
     <color name="duckbait_text">#F5F5F5</color>
     <color name="duckbait_hint">#BDBDBD</color>
     <color name="duckbait_border">#444444</color>
+    <background android:drawable="@color/ic_launcher_background" />
 </resources>
