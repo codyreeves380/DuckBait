@@ -76,51 +76,46 @@ public class MainActivity extends Activity {
         Button next = findViewById(R.id.btn_selection_next);
         TextView status = findViewById(R.id.txt_selection_status);
         TextView catalogHint = findViewById(R.id.txt_catalog_hint);
+
+        selectedTemplateAsset = null;
+        selectedDocumentName = null;
         List<String> states = loadCatalog();
         if (states.isEmpty()) {
-            states.add("No states added yet");
-            status.setText("The preset catalog could not be loaded or contains no states. Please update the app to the latest build.");
+            states.add("No states available");
+            status.setText("The preset catalog could not be loaded. Please check the installed app version.");
             catalogHint.setVisibility(View.VISIBLE);
         } else {
             catalogHint.setVisibility(View.GONE);
-            status.setText("Choose a state, then choose the county document.");
+            status.setText("Choose a state, then choose a county document.");
         }
-        stateSpinner.setAdapter(new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item, states));
-        stateSpinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
-            @Override public void onItemSelected(android.widget.AdapterView<?> parent, View view,
-                                                 int position, long id) {
-                String state = states.get(position);
-                List<TemplateChoice> counties = templatesByState.get(state);
-                List<String> labels = new ArrayList<>();
-                if (counties != null) for (TemplateChoice choice : counties) labels.add(choice.name);
-                if (labels.isEmpty()) labels.add("No documents available");
-                countySpinner.setAdapter(new ArrayAdapter<>(MainActivity.this,
-                        android.R.layout.simple_spinner_dropdown_item, labels));
-                boolean hasDocuments = counties != null && !counties.isEmpty();
-                countySpinner.setEnabled(hasDocuments);
-                next.setEnabled(false);
-                selectedTemplateAsset = null;
-                selectedDocumentName = null;
-            }
-            @Override public void onNothingSelected(android.widget.AdapterView<?> parent) {
-                next.setEnabled(false);
-            }
-        });
+
+        ArrayAdapter<String> stateAdapter = new ArrayAdapter<>(
+                this, android.R.layout.simple_spinner_item, states);
+        stateAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        stateSpinner.setAdapter(stateAdapter);
+
+        ArrayAdapter<String> countyAdapter = new ArrayAdapter<>(
+                this, android.R.layout.simple_spinner_item, new ArrayList<>());
+        countyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        countySpinner.setAdapter(countyAdapter);
+        countySpinner.setEnabled(false);
+
         countySpinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
             @Override public void onItemSelected(android.widget.AdapterView<?> parent, View view,
                                                  int position, long id) {
                 String state = (String) stateSpinner.getSelectedItem();
-                List<TemplateChoice> counties = templatesByState.get(state);
-                if (counties != null && position < counties.size()) {
-                    TemplateChoice choice = counties.get(position);
+                List<TemplateChoice> choices = templatesByState.get(state);
+                if (choices != null && position >= 0 && position < choices.size()) {
+                    TemplateChoice choice = choices.get(position);
                     selectedTemplateAsset = choice.assetPath;
                     selectedDocumentName = choice.name;
                     next.setEnabled(true);
+                    status.setText("Selected: " + choice.name + ". Tap Next to continue.");
                 } else {
                     selectedTemplateAsset = null;
                     selectedDocumentName = null;
                     next.setEnabled(false);
+                    status.setText("No document is available for this selection.");
                 }
             }
             @Override public void onNothingSelected(android.widget.AdapterView<?> parent) {
@@ -129,9 +124,52 @@ public class MainActivity extends Activity {
                 next.setEnabled(false);
             }
         });
+
+        stateSpinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
+            @Override public void onItemSelected(android.widget.AdapterView<?> parent, View view,
+                                                 int position, long id) {
+                String state = states.get(position);
+                List<TemplateChoice> choices = templatesByState.get(state);
+                countyAdapter.clear();
+                selectedTemplateAsset = null;
+                selectedDocumentName = null;
+                next.setEnabled(false);
+
+                if (choices == null || choices.isEmpty()) {
+                    countyAdapter.add("No documents available");
+                    countySpinner.setEnabled(false);
+                    status.setText("No preset documents are listed for " + state + ".");
+                    return;
+                }
+
+                for (TemplateChoice choice : choices) countyAdapter.add(choice.name);
+                countySpinner.setEnabled(true);
+                countyAdapter.notifyDataSetChanged();
+                countySpinner.setSelection(0);
+                // Set the first choice directly as well as through the spinner callback.
+                // This avoids depending on Android firing a callback after replacing its adapter.
+                TemplateChoice first = choices.get(0);
+                selectedTemplateAsset = first.assetPath;
+                selectedDocumentName = first.name;
+                next.setEnabled(true);
+                status.setText("Selected: " + first.name + ". Choose another county or tap Next.");
+            }
+            @Override public void onNothingSelected(android.widget.AdapterView<?> parent) {
+                countyAdapter.clear();
+                countySpinner.setEnabled(false);
+                selectedTemplateAsset = null;
+                selectedDocumentName = null;
+                next.setEnabled(false);
+            }
+        });
+
         findViewById(R.id.btn_selection_back).setOnClickListener(v -> showStartScreen());
         next.setOnClickListener(v -> {
-            if (selectedTemplateAsset != null) showDataEntryScreen();
+            if (selectedTemplateAsset != null && selectedDocumentName != null) {
+                showDataEntryScreen();
+            } else {
+                status.setText("Please select a county document before continuing.");
+            }
         });
     }
 
