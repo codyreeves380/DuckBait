@@ -1,11 +1,1077 @@
 {
   "states": [
     {
+      "name": "Florida",
+      "counties": [
+        {
+          "name": "Alachua County",
+          "template": "pts_templates/florida/Alachua.docx"
+        },
+        {
+          "name": "Baker County",
+          "template": "pts_templates/florida/Baker.docx"
+        },
+        {
+          "name": "Bay County",
+          "template": "pts_templates/florida/Bay.docx"
+        },
+        {
+          "name": "Bradford County",
+          "template": "pts_templates/florida/Bradford.docx"
+        },
+        {
+          "name": "Brevard County",
+          "template": "pts_templates/florida/Brevard.docx"
+        },
+        {
+          "name": "Broward County",
+          "template": "pts_templates/florida/Broward.docx"
+        },
+        {
+          "name": "Calhoun County",
+          "template": "pts_templates/florida/Calhoun.docx"
+        },
+        {
+          "name": "Charlotte County",
+          "template": "pts_templates/florida/Charlotte.docx"
+        },
+        {
+          "name": "Citrus County",
+          "template": "pts_templates/florida/Citrus.docx"
+        },
+        {
+          "name": "Clay County",
+          "template": "pts_templates/florida/Clay.docx"
+        },
+        {
+          "name": "Collier County",
+          "template": "pts_templates/florida/Collier.docx"
+        },
+        {
+          "name": "Columbia County",
+          "template": "pts_templates/florida/Columbia.docx"
+        },
+        {
+          "name": "DeSoto County",
+          "template": "pts_templates/florida/DeSoto.docx"
+        },
+        {
+          "name": "Dixie County",
+          "template": "pts_templates/florida/Dixie.docx"
+        },
+        {
+          "name": "Duval County",
+          "template": "pts_templates/florida/Duval.docx"
+        },
+        {
+          "name": "Escambia County",
+          "template": "pts_templates/florida/Escambia.docx"
+        },
+        {
+          "name": "Flagler County",
+          "template": "pts_templates/florida/Flagler.docx"
+        },
+        {
+          "name": "Franklin County",
+          "template": "pts_templates/florida/Franklin.docx"
+        },
+        {
+          "name": "Gadsden County",
+          "template": "pts_templates/florida/Gadsden.docx"
+        },
+        {
+          "name": "Glades County",
+          "template": "pts_templates/florida/Glades.docx"
+        },
+        {
+          "name": "Gulf County",
+          "template": "pts_templates/florida/Gulf.docx"
+        },
+        {
+          "name": "Hamilton County",
+          "template": "pts_templates/florida/Hamilton.docx"
+        },
+        {
+          "name": "Hardee County",
+          "template": "pts_templates/florida/Hardee.docx"
+        },
+        {
+          "name": "Hendry County",
+          "template": "pts_templates/florida/Hendry.docx"
+        },
+        {
+          "name": "Hernando County",
+          "template": "pts_templates/florida/Hernando.docx"
+        },
+        {
+          "name": "Highlands County",
+          "template": "pts_templates/florida/Highlands.docx"
+        },
+        {
+          "name": "Hillsborough County",
+          "template": "pts_templates/florida/Hillsborough.docx"
+        },
+        {
+          "name": "Holmes County",
+          "template": "pts_templates/florida/Holmes.docx"
+        },
+        {
+          "name": "Indian River County",
+          "template": "pts_templates/florida/Indian River.docx"
+        },
+        {
+          "name": "Jackson County",
+          "template": "pts_templates/florida/Jackson.docx"
+        },
+        {
+          "name": "Lake County",
+          "template": "pts_templates/florida/Lake.docx"
+        },
+        {
+          "name": "Lee County",
+          "template": "pts_templates/florida/Lee.docx"
+        },
+        {
+          "name": "Levy County",
+          "template": "pts_templates/florida/Levy.docx"
+        },
+        {
+          "name": "Madison County",
+          "template": "pts_templates/florida/Madison.docx"
+        },
+        {
+          "name": "Manatee County",
+          "template": "pts_templates/florida/Manatee.docx"
+        },
+        {
+          "name": "Marion County",
+          "template": "pts_templates/florida/Marion.docx"
+        },
+        {
+          "name": "Martin County",
+          "template": "pts_templates/florida/Martin.docx"
+        },
+        {
+          "name": "Monroe County",
+          "template": "pts_templates/florida/Monroe.docx"
+        },
+        {
+          "name": "Nassau County",
+          "template": "pts_templates/florida/Nassau.docx"
+        },
+        {
+          "name": "Okaloosa County",
+          "template": "pts_templates/florida/Okaloosa.docx"
+        },
+        {
+          "name": "Okeechobee County",
+          "template": "pts_templates/florida/Okeechobee.docx"
+        },
+        {
+          "name": "Orange County",
+          "template": "pts_templates/florida/Orange.docx"
+        },
+        {
+          "name": "Osceola County",
+          "template": "pts_templates/florida/Osceola.docx"
+        },
+        {
+          "name": "Palm Beach County",
+          "template": "pts_templates/florida/Palm Beach.docx"
+        },
+        {
+          "name": "Pasco County",
+          "template": "pts_templates/florida/Pasco.docx"
+        },
+        {
+          "name": "Pinellas County",
+          "template": "pts_templates/florida/Pinellas.docx"
+        },
+        {
+          "name": "Polk County",
+          "template": "pts_templates/florida/Polk.docx"
+        },
+        {
+          "name": "Putnam County",
+          "template": "pts_templates/florida/Putnam.docx"
+        },
+        {
+          "name": "Santa Rosa County",
+          "template": "pts_templates/florida/Santa Rosa.docx"
+        },
+        {
+          "name": "Sarasota County",
+          "template": "pts_templates/florida/Sarasota.docx"
+        },
+        {
+          "name": "Seminole County",
+          "template": "pts_templates/florida/Seminole.docx"
+        },
+        {
+          "name": "St Johns County",
+          "template": "pts_templates/florida/St Johns.docx"
+        },
+        {
+          "name": "St Lucie County",
+          "template": "pts_templates/florida/St Lucie.docx"
+        },
+        {
+          "name": "Sumter County",
+          "template": "pts_templates/florida/Sumter.docx"
+        },
+        {
+          "name": "Suwannee County",
+          "template": "pts_templates/florida/Suwannee.docx"
+        },
+        {
+          "name": "Taylor County",
+          "template": "pts_templates/florida/Taylor.docx"
+        },
+        {
+          "name": "Volusia County",
+          "template": "pts_templates/florida/Volusia.docx"
+        },
+        {
+          "name": "Wakulla County",
+          "template": "pts_templates/florida/Wakulla.docx"
+        },
+        {
+          "name": "Walton County",
+          "template": "pts_templates/florida/Walton.docx"
+        },
+        {
+          "name": "Washington County",
+          "template": "pts_templates/florida/Washington.docx"
+        }
+      ]
+    },
+    {
       "name": "Indiana",
       "counties": [
         {
+          "name": "Adams County",
+          "template": "pts_templates/indiana/AdamsIN.docx"
+        },
+        {
+          "name": "Allen County",
+          "template": "pts_templates/indiana/AllenIN.docx"
+        },
+        {
+          "name": "Benton County",
+          "template": "pts_templates/indiana/BentonIN.docx"
+        },
+        {
+          "name": "Blackford County",
+          "template": "pts_templates/indiana/BlackfordIN.docx"
+        },
+        {
+          "name": "Boone County",
+          "template": "pts_templates/indiana/BooneIN.docx"
+        },
+        {
+          "name": "Brown County",
+          "template": "pts_templates/indiana/BrownIN.docx"
+        },
+        {
+          "name": "Carroll County",
+          "template": "pts_templates/indiana/CarrollIN.docx"
+        },
+        {
+          "name": "Cass County",
+          "template": "pts_templates/indiana/CassIN.docx"
+        },
+        {
+          "name": "Clay County",
+          "template": "pts_templates/indiana/ClayIN.docx"
+        },
+        {
+          "name": "Clinton County",
+          "template": "pts_templates/indiana/ClintonIN.docx"
+        },
+        {
+          "name": "Crawford County",
+          "template": "pts_templates/indiana/CrawfordIN.docx"
+        },
+        {
+          "name": "Daviess County",
+          "template": "pts_templates/indiana/DaviessIN.docx"
+        },
+        {
+          "name": "DeKalb County",
+          "template": "pts_templates/indiana/DeKalbIN.docx"
+        },
+        {
+          "name": "Dearborn County",
+          "template": "pts_templates/indiana/DearbornIN.docx"
+        },
+        {
+          "name": "Decatur County",
+          "template": "pts_templates/indiana/DecaturIN.docx"
+        },
+        {
+          "name": "Dubois County",
+          "template": "pts_templates/indiana/DuboisIN.docx"
+        },
+        {
+          "name": "Elkhart County",
+          "template": "pts_templates/indiana/ElkhartIN.docx"
+        },
+        {
+          "name": "Fountain County",
+          "template": "pts_templates/indiana/FountainIN.docx"
+        },
+        {
+          "name": "Fulton County",
+          "template": "pts_templates/indiana/FultonIN.docx"
+        },
+        {
+          "name": "Grant County",
+          "template": "pts_templates/indiana/GrantIN.docx"
+        },
+        {
           "name": "Hamilton County",
-          "template": "pts_templates/indiana/hamilton/HamiltonIN.docx"
+          "template": "pts_templates/indiana/HamiltonIN.docx"
+        },
+        {
+          "name": "Hancock County",
+          "template": "pts_templates/indiana/HancockIN.docx"
+        },
+        {
+          "name": "Hendricks County",
+          "template": "pts_templates/indiana/HendricksIN.docx"
+        },
+        {
+          "name": "Howard County",
+          "template": "pts_templates/indiana/HowardIN.docx"
+        },
+        {
+          "name": "Huntington County",
+          "template": "pts_templates/indiana/HuntingtonIN.docx"
+        },
+        {
+          "name": "Jackson County",
+          "template": "pts_templates/indiana/JacksonIN.docx"
+        },
+        {
+          "name": "Jasper County",
+          "template": "pts_templates/indiana/JasperIN.docx"
+        },
+        {
+          "name": "Jay County",
+          "template": "pts_templates/indiana/JayIN.docx"
+        },
+        {
+          "name": "Jefferson County",
+          "template": "pts_templates/indiana/JeffersonIN.docx"
+        },
+        {
+          "name": "Jennings County",
+          "template": "pts_templates/indiana/JenningsIN.docx"
+        },
+        {
+          "name": "Knox County",
+          "template": "pts_templates/indiana/KnoxIN.docx"
+        },
+        {
+          "name": "Kosciusko County",
+          "template": "pts_templates/indiana/KosciuskoIN.docx"
+        },
+        {
+          "name": "LaGrange County",
+          "template": "pts_templates/indiana/LaGrangeIN.docx"
+        },
+        {
+          "name": "LaPorte County",
+          "template": "pts_templates/indiana/LaPorteIN.docx"
+        },
+        {
+          "name": "Lake County",
+          "template": "pts_templates/indiana/LakeIN.docx"
+        },
+        {
+          "name": "Lawrence County",
+          "template": "pts_templates/indiana/LawrenceIN.docx"
+        },
+        {
+          "name": "Madison County",
+          "template": "pts_templates/indiana/MadisonIN.docx"
+        },
+        {
+          "name": "Marion County",
+          "template": "pts_templates/indiana/MarionIN.docx"
+        },
+        {
+          "name": "Marshall County",
+          "template": "pts_templates/indiana/MarshallIN.docx"
+        },
+        {
+          "name": "Martin County",
+          "template": "pts_templates/indiana/MartinIN.docx"
+        },
+        {
+          "name": "Monroe County",
+          "template": "pts_templates/indiana/MonroeIN.docx"
+        },
+        {
+          "name": "Montgomery County",
+          "template": "pts_templates/indiana/MontgomeryIN.docx"
+        },
+        {
+          "name": "Newton County",
+          "template": "pts_templates/indiana/NewtonIN.docx"
+        },
+        {
+          "name": "Orange County",
+          "template": "pts_templates/indiana/OrangeIN.docx"
+        },
+        {
+          "name": "Parke County",
+          "template": "pts_templates/indiana/ParkeIN.docx"
+        },
+        {
+          "name": "Perry County",
+          "template": "pts_templates/indiana/PerryIN.docx"
+        },
+        {
+          "name": "Pike County",
+          "template": "pts_templates/indiana/PikeIN.docx"
+        },
+        {
+          "name": "Porter County",
+          "template": "pts_templates/indiana/PorterIN.docx"
+        },
+        {
+          "name": "Posey County",
+          "template": "pts_templates/indiana/PoseyIN.docx"
+        },
+        {
+          "name": "Pulaski County",
+          "template": "pts_templates/indiana/PulaskiIN.docx"
+        },
+        {
+          "name": "Putnam County",
+          "template": "pts_templates/indiana/PutnamIN.docx"
+        },
+        {
+          "name": "Randolph County",
+          "template": "pts_templates/indiana/RandolphIN.docx"
+        },
+        {
+          "name": "Rush County",
+          "template": "pts_templates/indiana/RushIN.docx"
+        },
+        {
+          "name": "Scott County",
+          "template": "pts_templates/indiana/ScottIN.docx"
+        },
+        {
+          "name": "Shelby County",
+          "template": "pts_templates/indiana/ShelbyIN.docx"
+        },
+        {
+          "name": "Spencer County",
+          "template": "pts_templates/indiana/SpencerIN.docx"
+        },
+        {
+          "name": "St. Joseph County",
+          "template": "pts_templates/indiana/St. JosephIN.docx"
+        },
+        {
+          "name": "Starke County",
+          "template": "pts_templates/indiana/StarkeIN.docx"
+        },
+        {
+          "name": "Steuben County",
+          "template": "pts_templates/indiana/SteubenIN.docx"
+        },
+        {
+          "name": "Sullivan County",
+          "template": "pts_templates/indiana/SullivanIN.docx"
+        },
+        {
+          "name": "Tippecanoe County",
+          "template": "pts_templates/indiana/TippecanoeIN.docx"
+        },
+        {
+          "name": "Tipton County",
+          "template": "pts_templates/indiana/TiptonIN.docx"
+        },
+        {
+          "name": "Vanderburgh County",
+          "template": "pts_templates/indiana/VanderburghIN.docx"
+        },
+        {
+          "name": "Vigo County",
+          "template": "pts_templates/indiana/VigoIN.docx"
+        },
+        {
+          "name": "Wabash County",
+          "template": "pts_templates/indiana/WabashIN.docx"
+        },
+        {
+          "name": "Warren County",
+          "template": "pts_templates/indiana/WarrenIN.docx"
+        },
+        {
+          "name": "Warrick County",
+          "template": "pts_templates/indiana/WarrickIN.docx"
+        },
+        {
+          "name": "Washington County",
+          "template": "pts_templates/indiana/WashingtonIN.docx"
+        },
+        {
+          "name": "Wayne County",
+          "template": "pts_templates/indiana/WayneIN.docx"
+        },
+        {
+          "name": "Wells County",
+          "template": "pts_templates/indiana/WellsIN.docx"
+        },
+        {
+          "name": "White County",
+          "template": "pts_templates/indiana/WhiteIN.docx"
+        },
+        {
+          "name": "Whitley County",
+          "template": "pts_templates/indiana/WhitleyIN.docx"
+        }
+      ]
+    },
+    {
+      "name": "Texas",
+      "counties": [
+        {
+          "name": "Anderson County",
+          "template": "pts_templates/texas/andersontx.docx"
+        },
+        {
+          "name": "Andrews County",
+          "template": "pts_templates/texas/andrewstx.docx"
+        },
+        {
+          "name": "Angelina County",
+          "template": "pts_templates/texas/angelinatx.docx"
+        },
+        {
+          "name": "Aransas County",
+          "template": "pts_templates/texas/aransastx.docx"
+        },
+        {
+          "name": "Archer County",
+          "template": "pts_templates/texas/archertx.docx"
+        },
+        {
+          "name": "Bee County",
+          "template": "pts_templates/texas/beetx.docx"
+        },
+        {
+          "name": "Bell County",
+          "template": "pts_templates/texas/belltx.docx"
+        },
+        {
+          "name": "Bexar County",
+          "template": "pts_templates/texas/bexartx.docx"
+        },
+        {
+          "name": "Bowie County",
+          "template": "pts_templates/texas/bowietx.docx"
+        },
+        {
+          "name": "Brazoria County",
+          "template": "pts_templates/texas/brazoriatx.docx"
+        },
+        {
+          "name": "Brazos County",
+          "template": "pts_templates/texas/brazostx.docx"
+        },
+        {
+          "name": "Brown County",
+          "template": "pts_templates/texas/browntx.docx"
+        },
+        {
+          "name": "Caldwell County",
+          "template": "pts_templates/texas/caldwelltx.docx"
+        },
+        {
+          "name": "Calhoun County",
+          "template": "pts_templates/texas/calhountx.docx"
+        },
+        {
+          "name": "Callahan County",
+          "template": "pts_templates/texas/callahantx.docx"
+        },
+        {
+          "name": "Cameron County",
+          "template": "pts_templates/texas/camerontx.docx"
+        },
+        {
+          "name": "Cass County",
+          "template": "pts_templates/texas/casstx.docx"
+        },
+        {
+          "name": "Chambers County",
+          "template": "pts_templates/texas/chamberstx.docx"
+        },
+        {
+          "name": "Cherokee County",
+          "template": "pts_templates/texas/cherokeetx.docx"
+        },
+        {
+          "name": "Childress County",
+          "template": "pts_templates/texas/childresstx.docx"
+        },
+        {
+          "name": "Clay County",
+          "template": "pts_templates/texas/claytx.docx"
+        },
+        {
+          "name": "Cochran County",
+          "template": "pts_templates/texas/cochrantx.docx"
+        },
+        {
+          "name": "Coleman County",
+          "template": "pts_templates/texas/colemantx.docx"
+        },
+        {
+          "name": "Collin County",
+          "template": "pts_templates/texas/collintx.docx"
+        },
+        {
+          "name": "Colorado County",
+          "template": "pts_templates/texas/coloradotx.docx"
+        },
+        {
+          "name": "Comal County",
+          "template": "pts_templates/texas/comaltx.docx"
+        },
+        {
+          "name": "Comanche County",
+          "template": "pts_templates/texas/comanchetx.docx"
+        },
+        {
+          "name": "Concho County",
+          "template": "pts_templates/texas/conchotx.docx"
+        },
+        {
+          "name": "Cooke County",
+          "template": "pts_templates/texas/cooketx.docx"
+        },
+        {
+          "name": "Crockett County",
+          "template": "pts_templates/texas/crocketttx.docx"
+        },
+        {
+          "name": "Dallas County",
+          "template": "pts_templates/texas/dallastx.docx"
+        },
+        {
+          "name": "Denton County",
+          "template": "pts_templates/texas/dentontx.docx"
+        },
+        {
+          "name": "DeWitt County",
+          "template": "pts_templates/texas/dewitttx.docx"
+        },
+        {
+          "name": "Eastland County",
+          "template": "pts_templates/texas/eastlandtx.docx"
+        },
+        {
+          "name": "Ector County",
+          "template": "pts_templates/texas/ectortx.docx"
+        },
+        {
+          "name": "Ellis County",
+          "template": "pts_templates/texas/elellistx.docx"
+        },
+        {
+          "name": "Erath County",
+          "template": "pts_templates/texas/erathtx.docx"
+        },
+        {
+          "name": "Falls County",
+          "template": "pts_templates/texas/fallstx.docx"
+        },
+        {
+          "name": "Fort Bend County",
+          "template": "pts_templates/texas/fortbendtx.docx"
+        },
+        {
+          "name": "Franklin County",
+          "template": "pts_templates/texas/franklintx.docx"
+        },
+        {
+          "name": "Freestone County",
+          "template": "pts_templates/texas/freestonetx.docx"
+        },
+        {
+          "name": "Galveston County",
+          "template": "pts_templates/texas/galvestontx.docx"
+        },
+        {
+          "name": "Garza County",
+          "template": "pts_templates/texas/garzatx.docx"
+        },
+        {
+          "name": "Gillespie County",
+          "template": "pts_templates/texas/gillespietx.docx"
+        },
+        {
+          "name": "Grayson County",
+          "template": "pts_templates/texas/graysontx.docx"
+        },
+        {
+          "name": "Gregg County",
+          "template": "pts_templates/texas/greggtx.docx"
+        },
+        {
+          "name": "Grimes County",
+          "template": "pts_templates/texas/grimestx.docx"
+        },
+        {
+          "name": "Guadalupe County",
+          "template": "pts_templates/texas/guadalupetx.docx"
+        },
+        {
+          "name": "Hardin County",
+          "template": "pts_templates/texas/hardintx.docx"
+        },
+        {
+          "name": "Harris County",
+          "template": "pts_templates/texas/harristx.docx"
+        },
+        {
+          "name": "Hays County",
+          "template": "pts_templates/texas/haystx.docx"
+        },
+        {
+          "name": "Hemphill County",
+          "template": "pts_templates/texas/hemphilltx.docx"
+        },
+        {
+          "name": "Henderson County",
+          "template": "pts_templates/texas/hendersontx.docx"
+        },
+        {
+          "name": "Hidalgo County",
+          "template": "pts_templates/texas/hidalgotx.docx"
+        },
+        {
+          "name": "Hockley County",
+          "template": "pts_templates/texas/hockleytx.docx"
+        },
+        {
+          "name": "Hopkins County",
+          "template": "pts_templates/texas/hopkinstx.docx"
+        },
+        {
+          "name": "Houston County",
+          "template": "pts_templates/texas/houstontx.docx"
+        },
+        {
+          "name": "Howard County",
+          "template": "pts_templates/texas/howardtx.docx"
+        },
+        {
+          "name": "Hunt County",
+          "template": "pts_templates/texas/hunttx.docx"
+        },
+        {
+          "name": "Hutchinson County",
+          "template": "pts_templates/texas/hutchinsontx.docx"
+        },
+        {
+          "name": "Jack County",
+          "template": "pts_templates/texas/jacktx.docx"
+        },
+        {
+          "name": "Jasper County",
+          "template": "pts_templates/texas/jaspertx.docx"
+        },
+        {
+          "name": "Jefferson County",
+          "template": "pts_templates/texas/jeffersontx.docx"
+        },
+        {
+          "name": "Jim Wells County",
+          "template": "pts_templates/texas/jimwellstx.docx"
+        },
+        {
+          "name": "Karnes County",
+          "template": "pts_templates/texas/karnestx.docx"
+        },
+        {
+          "name": "Kaufman County",
+          "template": "pts_templates/texas/kaufmantx.docx"
+        },
+        {
+          "name": "Kendall County",
+          "template": "pts_templates/texas/kendalltx.docx"
+        },
+        {
+          "name": "Kerr County",
+          "template": "pts_templates/texas/kerrtx.docx"
+        },
+        {
+          "name": "Kimble County",
+          "template": "pts_templates/texas/kimbletx.docx"
+        },
+        {
+          "name": "Kleberg County",
+          "template": "pts_templates/texas/klebergtx.docx"
+        },
+        {
+          "name": "Lamar County",
+          "template": "pts_templates/texas/lamartx.docx"
+        },
+        {
+          "name": "Lavaca County",
+          "template": "pts_templates/texas/lavacatx.docx"
+        },
+        {
+          "name": "Lee County",
+          "template": "pts_templates/texas/leetx.docx"
+        },
+        {
+          "name": "Liberty County",
+          "template": "pts_templates/texas/libertytx.docx"
+        },
+        {
+          "name": "Lubbock County",
+          "template": "pts_templates/texas/lubbocktx.docx"
+        },
+        {
+          "name": "Madison County",
+          "template": "pts_templates/texas/madisontx.docx"
+        },
+        {
+          "name": "Martin County",
+          "template": "pts_templates/texas/martintx.docx"
+        },
+        {
+          "name": "Matagorda County",
+          "template": "pts_templates/texas/matagordatx.docx"
+        },
+        {
+          "name": "McCulloch County",
+          "template": "pts_templates/texas/mccullochtx.docx"
+        },
+        {
+          "name": "McLennan County",
+          "template": "pts_templates/texas/mclennantx.docx"
+        },
+        {
+          "name": "Milam County",
+          "template": "pts_templates/texas/milamtx.docx"
+        },
+        {
+          "name": "Mills County",
+          "template": "pts_templates/texas/millstx.docx"
+        },
+        {
+          "name": "Montague County",
+          "template": "pts_templates/texas/montaguetx.docx"
+        },
+        {
+          "name": "Montgomery County",
+          "template": "pts_templates/texas/montgomerytx.docx"
+        },
+        {
+          "name": "Moore County",
+          "template": "pts_templates/texas/mooretx.docx"
+        },
+        {
+          "name": "Nacogdoches County",
+          "template": "pts_templates/texas/nacogdochestx.docx"
+        },
+        {
+          "name": "Navarro County",
+          "template": "pts_templates/texas/navarrotx.docx"
+        },
+        {
+          "name": "Nolan County",
+          "template": "pts_templates/texas/nolantx.docx"
+        },
+        {
+          "name": "Nueces County",
+          "template": "pts_templates/texas/nuecestx.docx"
+        },
+        {
+          "name": "Ochiltree County",
+          "template": "pts_templates/texas/ochiltreetx.docx"
+        },
+        {
+          "name": "Orange County",
+          "template": "pts_templates/texas/orangetx.docx"
+        },
+        {
+          "name": "Palo Pinto County",
+          "template": "pts_templates/texas/palopintotx.docx"
+        },
+        {
+          "name": "Panola County",
+          "template": "pts_templates/texas/panolatx.docx"
+        },
+        {
+          "name": "Parker County",
+          "template": "pts_templates/texas/parkertx.docx"
+        },
+        {
+          "name": "Parmer County",
+          "template": "pts_templates/texas/parmertx.docx"
+        },
+        {
+          "name": "Polk County",
+          "template": "pts_templates/texas/polktx.docx"
+        },
+        {
+          "name": "Randall County",
+          "template": "pts_templates/texas/randalltx.docx"
+        },
+        {
+          "name": "Reagan County",
+          "template": "pts_templates/texas/reagantx.docx"
+        },
+        {
+          "name": "Real County",
+          "template": "pts_templates/texas/realtx.docx"
+        },
+        {
+          "name": "Red River County",
+          "template": "pts_templates/texas/redrivertx.docx"
+        },
+        {
+          "name": "Robertson County",
+          "template": "pts_templates/texas/robertsontx.docx"
+        },
+        {
+          "name": "Rockwall County",
+          "template": "pts_templates/texas/rockwalltx.docx"
+        },
+        {
+          "name": "Runnels County",
+          "template": "pts_templates/texas/runnelstx.docx"
+        },
+        {
+          "name": "Rusk County",
+          "template": "pts_templates/texas/rusktx.docx"
+        },
+        {
+          "name": "Sabine County",
+          "template": "pts_templates/texas/sabinetx.docx"
+        },
+        {
+          "name": "San Augustine County",
+          "template": "pts_templates/texas/sanaugustinetx.docx"
+        },
+        {
+          "name": "Shackelford County",
+          "template": "pts_templates/texas/shackelfordtx.docx"
+        },
+        {
+          "name": "Shelby County",
+          "template": "pts_templates/texas/shelbytx.docx"
+        },
+        {
+          "name": "Smith County",
+          "template": "pts_templates/texas/smithtx.docx"
+        },
+        {
+          "name": "Starr County",
+          "template": "pts_templates/texas/starrtx.docx"
+        },
+        {
+          "name": "Stephens County",
+          "template": "pts_templates/texas/stephenstx.docx"
+        },
+        {
+          "name": "Tarrant County",
+          "template": "pts_templates/texas/tarranttx.docx"
+        },
+        {
+          "name": "Terry County",
+          "template": "pts_templates/texas/terrytx.docx"
+        },
+        {
+          "name": "Titus County",
+          "template": "pts_templates/texas/titustx.docx"
+        },
+        {
+          "name": "Tom Green County",
+          "template": "pts_templates/texas/tomgreentx.docx"
+        },
+        {
+          "name": "Travis County",
+          "template": "pts_templates/texas/travistx.docx"
+        },
+        {
+          "name": "Van Zandt County",
+          "template": "pts_templates/texas/vanzandttx.docx"
+        },
+        {
+          "name": "Victoria County",
+          "template": "pts_templates/texas/victoriatx.docx"
+        },
+        {
+          "name": "Walker County",
+          "template": "pts_templates/texas/walkertx.docx"
+        },
+        {
+          "name": "Waller County",
+          "template": "pts_templates/texas/wallertx.docx"
+        },
+        {
+          "name": "Washington County",
+          "template": "pts_templates/texas/washingtontx.docx"
+        },
+        {
+          "name": "Webb County",
+          "template": "pts_templates/texas/webbtx.docx"
+        },
+        {
+          "name": "Wharton County",
+          "template": "pts_templates/texas/whartontx.docx"
+        },
+        {
+          "name": "Wheeler County",
+          "template": "pts_templates/texas/wheelertx.docx"
+        },
+        {
+          "name": "Wichita County",
+          "template": "pts_templates/texas/wichitatx.docx"
+        },
+        {
+          "name": "Willacy County",
+          "template": "pts_templates/texas/willacytx.docx"
+        },
+        {
+          "name": "Williamson County",
+          "template": "pts_templates/texas/williamsontx.docx"
+        },
+        {
+          "name": "Wilson County",
+          "template": "pts_templates/texas/wilsontx.docx"
+        },
+        {
+          "name": "Winkler County",
+          "template": "pts_templates/texas/winklertx.docx"
+        },
+        {
+          "name": "Wise County",
+          "template": "pts_templates/texas/wisetx.docx"
+        },
+        {
+          "name": "Wood County",
+          "template": "pts_templates/texas/woodtx.docx"
+        },
+        {
+          "name": "Yoakum County",
+          "template": "pts_templates/texas/yoakumtx.docx"
+        },
+        {
+          "name": "Young County",
+          "template": "pts_templates/texas/youngtx.docx"
         }
       ]
     }
