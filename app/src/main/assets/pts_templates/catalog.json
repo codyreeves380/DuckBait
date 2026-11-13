@@ -1,3 +1,13 @@
 {
-  "states": []
+  "states": [
+    {
+      "name": "Indiana",
+      "counties": [
+        {
+          "name": "Hamilton County",
+          "template": "pts_templates/indiana/hamilton/HamiltonIN.docx"
+        }
+      ]
+    }
+  ]
 }
