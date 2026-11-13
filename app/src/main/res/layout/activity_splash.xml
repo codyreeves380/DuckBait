@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="28dp"
-    android:background="@color/duckbait_background">
+    android:background="#08090B"
+    android:padding="16dp">
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:contentDescription="DuckBait logo"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_launcher_512" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/splash_artwork"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="AlwaysASuspect Productions"
-        android:textColor="@color/duckbait_text"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.03" />
-</LinearLayout>
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="DuckBait splash screen with AlwaysASuspect Productions branding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/duckbait_splash" />
+</FrameLayout>
