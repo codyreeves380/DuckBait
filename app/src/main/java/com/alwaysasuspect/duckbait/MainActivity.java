@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
     private TextView txtStatus;
     private String selectedTemplateAsset;
     private String selectedDocumentName;
+    private String selectedRequirementText = "Not Required";
     private Map<String, String> pendingReplacements;
     private final Map<String, List<TemplateChoice>> templatesByState = new HashMap<>();
 
@@ -279,6 +280,15 @@ public class MainActivity extends Activity {
     }
 
     private void showFinalScreen() {
+        // Capture this choice while the data-entry layout is still active.
+        RadioGroup requirementGroup = findViewById(R.id.group_requirement);
+        if (requirementGroup != null) {
+            int checkedId = requirementGroup.getCheckedRadioButtonId();
+            RadioButton selectedRequirement = checkedId == -1
+                    ? null : findViewById(checkedId);
+            selectedRequirementText = selectedRequirement == null
+                    ? "Not Required" : selectedRequirement.getText().toString();
+        }
         setContentView(R.layout.activity_final);
         ((TextView) findViewById(R.id.txt_final_document))
                 .setText("Selected preset: " + selectedDocumentName);
@@ -316,10 +326,7 @@ public class MainActivity extends Activity {
         replacements.put("[[PRO]]", inputProgram.getText().toString().trim());
         replacements.put("[[TAX]]", inputTax.getText().toString().trim());
         replacements.put("[[JUDGE]]", inputJudge.getText().toString().trim());
-        RadioGroup requirementGroup = findViewById(R.id.group_requirement);
-        RadioButton selectedRequirement = findViewById(requirementGroup.getCheckedRadioButtonId());
-        replacements.put("[[REQU]]", selectedRequirement == null
-                ? "Not Required" : selectedRequirement.getText().toString());
+        replacements.put("[[REQU]]", selectedRequirementText);
         if (replacements.get("[[DEFENDANT]]").isEmpty()
                 || replacements.get("[[CAUSENO]]").isEmpty()) {
             ((TextView) findViewById(R.id.txt_final_status))
