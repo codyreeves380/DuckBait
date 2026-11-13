@@ -292,7 +292,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_final);
         ((TextView) findViewById(R.id.txt_final_document))
                 .setText("Selected preset: " + selectedDocumentName);
-        findViewById(R.id.btn_final_back).setOnClickListener(v -> showDataEntryScreen());
+        findViewById(R.id.btn_final_back).setOnClickListener(v -> showStartScreen());
         findViewById(R.id.btn_generate).setOnClickListener(v -> runDocumentGeneration());
     }
 
