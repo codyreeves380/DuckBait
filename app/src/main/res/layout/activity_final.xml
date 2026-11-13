@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/duckbait_background"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to Generate"
+            android:textColor="@color/duckbait_text"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_final_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/duckbait_text"
+            android:text="Selected document" />
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Generate Document"
+            android:backgroundTint="@color/duckbait_primary"
+            android:textColor="@color/duckbait_background" />
+        <TextView
+            android:id="@+id/txt_final_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/duckbait_text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="IMPORTANT: Before sending"
+            android:textColor="@color/duckbait_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1. Always open the generated document in Google Docs and check that everything lines up. You may need to backspace or press Enter in a few places.\n\n2. Check the size of the signature blocks. You may need to enlarge them or delete extra lines.\n\n3. Once everything is checked, convert the document to PDF, sign it, and email it."
+            android:textColor="@color/duckbait_text"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btn_final_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Back" />
+    </LinearLayout>
+</ScrollView>
