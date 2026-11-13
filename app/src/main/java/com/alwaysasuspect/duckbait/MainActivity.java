@@ -75,10 +75,15 @@ public class MainActivity extends Activity {
         Spinner countySpinner = findViewById(R.id.spinner_county);
         Button next = findViewById(R.id.btn_selection_next);
         TextView status = findViewById(R.id.txt_selection_status);
+        TextView catalogHint = findViewById(R.id.txt_catalog_hint);
         List<String> states = loadCatalog();
         if (states.isEmpty()) {
             states.add("No states added yet");
-            status.setText("Add states and county template entries in assets/pts_templates/catalog.json.");
+            status.setText("The preset catalog could not be loaded or contains no states. Please update the app to the latest build.");
+            catalogHint.setVisibility(View.VISIBLE);
+        } else {
+            catalogHint.setVisibility(View.GONE);
+            status.setText("Choose a state, then choose the county document.");
         }
         stateSpinner.setAdapter(new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item, states));
@@ -134,9 +139,13 @@ public class MainActivity extends Activity {
         templatesByState.clear();
         List<String> states = new ArrayList<>();
         try (InputStream input = getAssets().open("pts_templates/catalog.json")) {
-            byte[] bytes = new byte[input.available()];
-            int length = input.read(bytes);
-            JSONObject root = new JSONObject(new String(bytes, 0, length, StandardCharsets.UTF_8));
+            java.io.ByteArrayOutputStream buffer = new java.io.ByteArrayOutputStream();
+            byte[] chunk = new byte[8192];
+            int count;
+            while ((count = input.read(chunk)) != -1) {
+                buffer.write(chunk, 0, count);
+            }
+            JSONObject root = new JSONObject(new String(buffer.toByteArray(), StandardCharsets.UTF_8));
             JSONArray stateArray = root.optJSONArray("states");
             if (stateArray == null) return states;
             for (int i = 0; i < stateArray.length(); i++) {
@@ -247,6 +256,11 @@ public class MainActivity extends Activity {
     }
 
     private void runDocumentGeneration() {
+        if (selectedTemplateAsset == null || selectedDocumentName == null) {
+            TextView status = findViewById(R.id.txt_final_status);
+            if (status != null) status.setText("No preset document is selected. Go back and choose a state and county document first.");
+            return;
+        }
         Map<String, String> replacements = new HashMap<>();
         replacements.put("[[DEFENDANT]]", inputDefendant.getText().toString().trim());
         replacements.put("[[CAUSENO]]", inputCauseNo.getText().toString().trim());
@@ -280,7 +294,7 @@ public class MainActivity extends Activity {
         intent.setType(DOCX_MIME_TYPE);
         intent.putExtra(Intent.EXTRA_TITLE, "Generated_" + System.currentTimeMillis() + ".docx");
         ((TextView) findViewById(R.id.txt_final_status))
-                .setText("Choose a save location for the generated document.");
+                .setText("Choose a folder and filename for the generated document. This is the save step, not document selection.");
         startActivityForResult(intent, CREATE_DOCX_FILE);
     }
 
