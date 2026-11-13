@@ -22,6 +22,8 @@ import android.net.Uri;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
@@ -243,7 +245,6 @@ public class MainActivity extends Activity {
         bindSavedInput(inputCauseNo, findViewById(R.id.save_causeno), "causeno");
         bindSavedInput(inputDate, findViewById(R.id.save_date), "date");
         bindSavedInput(inputDefId, findViewById(R.id.save_defid), "defid");
-        bindSavedInput(inputDeposit, findViewById(R.id.save_deposit), "deposit");
         bindSavedInput(inputDay, findViewById(R.id.save_day), "day");
         bindSavedInput(inputMonth, findViewById(R.id.save_month), "month");
         bindSavedInput(inputYear, findViewById(R.id.save_year), "year");
@@ -255,6 +256,48 @@ public class MainActivity extends Activity {
         bindSavedInput(inputProgram, findViewById(R.id.save_program), "program");
         bindSavedInput(inputTax, findViewById(R.id.save_tax), "tax");
         bindSavedInput(inputJudge, findViewById(R.id.save_judge), "judge");
+
+        // Deposit is calculated from GPS + Program (PRO) + Tax.
+        // It is deliberately read-only so the displayed amount always matches its components.
+        inputDeposit.setKeyListener(null);
+        inputDeposit.setFocusable(false);
+        inputDeposit.setFocusableInTouchMode(false);
+        inputDeposit.setCursorVisible(false);
+        TextWatcher depositWatcher = new TextWatcher() {
+            @Override public void beforeTextChanged(CharSequence text, int start, int count, int after) { }
+            @Override public void onTextChanged(CharSequence text, int start, int before, int count) {
+                updateCalculatedDeposit();
+            }
+            @Override public void afterTextChanged(Editable text) { }
+        };
+        inputGps.addTextChangedListener(depositWatcher);
+        inputProgram.addTextChangedListener(depositWatcher);
+        inputTax.addTextChangedListener(depositWatcher);
+        updateCalculatedDeposit();
+    }
+
+
+    private void updateCalculatedDeposit() {
+        String gps = inputGps.getText().toString().trim();
+        String program = inputProgram.getText().toString().trim();
+        String tax = inputTax.getText().toString().trim();
+        if (gps.isEmpty() && program.isEmpty() && tax.isEmpty()) {
+            inputDeposit.setText("");
+            return;
+        }
+        try {
+            BigDecimal total = BigDecimal.ZERO;
+            String[] amounts = {gps, program, tax};
+            for (String amount : amounts) {
+                if (amount.isEmpty()) continue;
+                String normalized = amount.replace("$", "").replace(",", "").trim();
+                total = total.add(new BigDecimal(normalized));
+            }
+            inputDeposit.setText(total.setScale(2, RoundingMode.HALF_UP).toPlainString());
+        } catch (NumberFormatException e) {
+            // Do not show a misleading total while one of the component amounts is invalid.
+            inputDeposit.setText("");
+        }
     }
 
     private void bindSavedInput(final EditText input, final CheckBox saveCheckbox, final String key) {
