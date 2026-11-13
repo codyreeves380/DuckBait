@@ -2,6 +2,7 @@ package com.alwaysasuspect.duckbait;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.ActivityNotFoundException;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
@@ -340,7 +341,14 @@ public class MainActivity extends Activity {
         intent.putExtra(Intent.EXTRA_TITLE, "Generated_" + System.currentTimeMillis() + ".docx");
         ((TextView) findViewById(R.id.txt_final_status))
                 .setText("Choose a folder and filename for the generated document. This is the save step, not document selection.");
-        startActivityForResult(intent, CREATE_DOCX_FILE);
+        try {
+            startActivityForResult(intent, CREATE_DOCX_FILE);
+        } catch (ActivityNotFoundException | SecurityException e) {
+            pendingReplacements = null;
+            Log.e(TAG, "Unable to launch Android document picker", e);
+            ((TextView) findViewById(R.id.txt_final_status))
+                    .setText("Unable to open the save screen. Please install or enable a file picker and try again.");
+        }
     }
 
     @Override
