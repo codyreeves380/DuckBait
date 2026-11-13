@@ -228,7 +228,7 @@
             android:hint="GPS"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
+            android:inputType="numberDecimal|numberSigned" />
         <CheckBox
             android:id="@+id/save_gps"
             android:layout_width="wrap_content"
@@ -245,7 +245,7 @@
             android:hint="Program"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
+            android:inputType="numberDecimal|numberSigned" />
         <CheckBox
             android:id="@+id/save_program"
             android:layout_width="wrap_content"
@@ -262,7 +262,7 @@
             android:hint="Tax"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
-            android:inputType="text" />
+            android:inputType="numberDecimal|numberSigned" />
         <CheckBox
             android:id="@+id/save_tax"
             android:layout_width="wrap_content"
@@ -276,16 +276,11 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/duckbait_primary"
-            android:hint="Deposit"
+            android:hint="Deposit (GPS + Program + Tax)"
             android:textColor="@color/duckbait_text"
             android:textColorHint="@color/duckbait_hint"
             android:inputType="numberDecimal" />
-        <CheckBox
-            android:id="@+id/save_deposit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Deposit"
-            android:textColor="@color/duckbait_text" />
+
 
 
         <TextView
